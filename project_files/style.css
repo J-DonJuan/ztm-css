@@ -1,0 +1,25 @@
+/* Selector {
+    Property: value;
+} */
+
+body {
+    background-image: url(doggo.jpg);
+    background-size: cover;
+}
+
+h2 {
+    color: #81C1D6;
+    text-align: center;
+    border: 5px solid #36849E;
+    /* border: 5px solid rgba(0,255,0, 0.2); */
+    cursor: pointer;
+}
+
+p {
+    color: pink;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}

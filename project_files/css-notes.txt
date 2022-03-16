@@ -1,0 +1,28 @@
+/* Selector {
+    Property: value;
+} */
+
+CSS Cascades downward so it will take the last input it receives for a property.
+Ctrl+Shift+I for developer tools.
+
+The main way of adding styles to CSS is to create a separate CSS file, but there are other ways that aren't used as often.
+
+Inline styles were the original way of adding CSS into our HTML document by ssimply pecifying CSS within the element in the HTML.
+<header style="background-color: green color: red">
+
+The 3rd way is creating style tags in the head section of your HTML document, and within those style tags you can enter CSS. 
+
+<head>
+    <style>
+        li {
+            background-color:purple;
+            color: white;
+        }
+    </style>
+</head>
+
+Creating separate CSS files is the standard way of doing things. Instead of having one huge file of HTML and CSS these can be 
+separated,making them easier to maintain and work on. Separate teams can be working on the CSS files and HTML files at 
+the same time. Allows for separation of concerns.
+
+
