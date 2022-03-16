@@ -2,7 +2,9 @@
     Property: value;
 } */
 
-CSS Cascades downward so it will take the last input it receives for a property.
+Cascading Style Sheets at the most basic level it indicates that the order of the CSS rules matter.
+CSS Cascades downward so it will take the last input it receives for a property and apply that if that are multiple selectors for the same element.
+
 Ctrl+Shift+I for developer tools.
 
 The main way of adding styles to CSS is to create a separate CSS file, but there are other ways that aren't used as often.
@@ -24,5 +26,64 @@ The 3rd way is creating style tags in the head section of your HTML document, an
 Creating separate CSS files is the standard way of doing things. Instead of having one huge file of HTML and CSS these can be 
 separated,making them easier to maintain and work on. Separate teams can be working on the CSS files and HTML files at 
 the same time. Allows for separation of concerns.
+
+**Select multiple selectors**
+
+
+h2, p {
+    Property: value;
+}
+
+
+Class is a good way to select multiple elements and make sure they have the same styles.
+E.G.
+HTML file:
+<p> Lorem Ipsum </p>
+<p class="webtext"> Lorem Ipsum </p>
+<p class="webtext"> Lorem Ipsum </p>
+<p class="webtext active"> Lorem Ipsum </p>
+
+CSS file:
+.webtext {
+    color: red;
+}
+
+.active {
+    color: blue;
+}
+
+IDs are another way of selecting.
+HTML file:
+<div id ="div1">
+    <h1> Hello </h1>
+<div>
+
+<div id ="div2">
+    <h1> Hello </h1>
+<div>
+
+CSS file:
+.div1 {
+    Property: value;
+}
+
+.div2 {
+    Property: value;
+}
+
+Each id must be unique.
+
+
+What selectors win out in the cascade depends on:
+-Specificity
+-Importance
+-Source Order
+
+https://www.w3schools.com/cssref/css_selectors.asp
+https://css-tricks.com/almanac
+https://css-diner.netlify.app/
+
+3/16/22 stopping at "Text and Font"
+
 
 

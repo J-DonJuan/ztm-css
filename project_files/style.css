@@ -2,12 +2,16 @@
     Property: value;
 } */
 
+* {
+    text-align: right;
+}
+
 body {
     background-image: url(doggo.jpg);
     background-size: cover;
 }
 
-h2 {
+h2, p {
     color: #81C1D6;
     text-align: center;
     border: 5px solid #36849E;
@@ -22,4 +26,12 @@ p {
 li {
     list-style: none;
     display: inline-block;
+}
+
+.webtext {
+    border: 5px dashed;
+}
+
+.color {
+    color:red;
 }
